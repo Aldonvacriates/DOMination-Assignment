@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JavaScript Fundamentals Quiz</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <!-- Welcome Modal -->
+    <section id="welcome" class="card">
+      <h1>Welcome to the DOMination Assignment</h1>
+      <p class="muted">Test your knowledge of JavaScript basics: variables, arrays, loops, functions, and the DOM.</p>
+      <button id="start" class="btn primary">Start Quiz</button>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz" class="card hidden" aria-live="polite">
+      <h1>JavaScript Fundamentals Quiz</h1>
+      <p id="progress" class="muted">Question <span id="qnum">1</span> of <span id="qtotal">1</span></p>
+      <div id="question" class="question">Question text</div>
+      <div id="options" class="options" role="group" aria-label="Answer options"></div>
+      <div class="controls">
+        <button id="next" class="btn primary" disabled>Next Question</button>
+      </div>
+    </section>
+
+    <!-- Score Section -->
+    <section id="score" class="card hidden">
+      <h2>Quiz Complete</h2>
+      <p id="scoreText" class="big">You scored 0/0</p>
+      <button id="restart" class="btn">Restart Quiz</button>
+
+      <details class="review">
+        <summary>Review answers</summary>
+        <div id="reviewList" class="review-list"></div>
+      </details>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
