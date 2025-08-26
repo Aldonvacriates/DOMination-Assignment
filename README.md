@@ -30,4 +30,4 @@ This project was created as part of the **DOMination Assignment**.
 
 1. Clone or download this repository.
    ```bash
-   git clone https://github.com/your-username/domination-quiz.git
+   git clone git@github.com:Aldonvacriates/DOMination-Assignment.git
